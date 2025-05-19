@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tienda de Juegos y Licencias</title>
+    <link rel="stylesheet" href="css/estilos.css">
+</head>
+<body>
+    <header>
+        <h1>Tienda de Juegos y Licencias</h1>
+        <a href="administrativo.html" class="login-btn">Administrador</a>
+    </header>
+    
+    <section id="catalogo">
+        <h2>Catálogo de Juegos</h2>
+        <div class="juego">
+            <h3>Ejemplo de Juego</h3>
+            <p>Plataforma: Steam</p>
+            <p>Precio: $10.00</p>
+        </div>
+        <div class="juego">
+            <h3>Otro Juego</h3>
+            <p>Plataforma: Epic Games</p>
+            <p>Precio: $15.00</p>
+        </div>
+    </section>
+
+    <section id="contacto">
+        <h2>Solicitud de Juego</h2>
+        <form onsubmit="registrarSolicitudCliente(event)">
+            <input type="text" id="nombreCliente" placeholder="Tu nombre" required>
+            <input type="text" id="producto" placeholder="Juego o licencia" required>
+            <select id="plataforma" required>
+                <option value="Steam">Steam</option>
+                <option value="Epic Games">Epic Games</option>
+                <option value="Otra">Otra</option>
+            </select>
+            <button type="submit">Enviar Solicitud</button>
+        </form>
+    </section>
+
+    <footer>
+        <p>&copy; 2025 Tienda de Juegos y Licencias</p>
+    </footer>
+    
+    <script src="script.js"></script>
+</body>
+</html>
+
